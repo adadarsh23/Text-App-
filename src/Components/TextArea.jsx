@@ -281,8 +281,8 @@ function TextArea() {
         <div className="container mx-auto my-5 id1 rounded" style={myStyle}>
           <form style={myStyle}>
             <div className="w-full mb-4 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600" style={myStyle}>
-              <div className="flex justify-between items-center px-3 py-2 border-b dark:border-gray-600" style={myStyle}>
-                <div className='flex flex-wrap justify-start items-start'>
+              <div className="flex  flex-wrap justify-center items-center px-3 py-2 border-b dark:border-gray-600" style={myStyle}>
+                <div className='flex flex-wrap justify-center items-center'>
                   <div className="id1 border-1 border-gray-200 rounded-lg pt-2 pb-2 pl-1 pr-1" style={myStyle} >
                     <button
                       type="button"
@@ -383,87 +383,90 @@ function TextArea() {
                       <IoIosPrint />
                     </button>
                   </div>
-                </div>
-                <div className=" id1 flex flex-wrap justify-end border-1 border-gray-200 rounded-lg pt-2 pb-2 pl-1 pr-1" style={myStyle} >
-                  <label text="choose file"
-                    title="choose file" className="inline-flex items-center px-2.5 py-2.5 me-2  text-sm text-center focus:ring-4 focus:ring-stone-200 dark:focus:ring-stone-900 bg-stone-700 hover:bg-stone-950 text-white font-bold rounded">
-                    <Upload className="w-5 h-5" />
-                    <input
-                      type="file"
-                      accept=".txt"
-                      onChange={handleFileChange}
-                      className="hidden"
-                    />
-                  </label>
-                  <button
-                    onClick={handleDownload}
-                    className="inline-flex items-center px-2.5 py-2.5 me-2 text-sm text-center focus:ring-4 focus:ring-stone-200 dark:focus:ring-stone-900 bg-stone-700 hover:bg-stone-950 text-white font-bold rounded"
-                  >
-                    <Download className="w-5 h-5" />
-                  </button>
-                  <select
-                    onChange={handleFontChange}
-                    className="p-2 border rounded-xl shadow-md"
-                    style={{ backgroundColor: myStyle.backgroundColor, color: myStyle.color }}
-                    value={font}>
-                    {/* Sans-serif Fonts */}
-                    <option value="Arial, sans-serif">Arial</option>
-                    <option value="Verdana, sans-serif">Verdana</option>
-                    <option value="Helvetica, sans-serif">Helvetica</option>
-                    <option value="Tahoma, sans-serif">Tahoma</option>
-                    <option value="Trebuchet MS, sans-serif">Trebuchet MS</option>
-                    <option value="Gill Sans, sans-serif">Gill Sans</option>
-                    <option value="Noto Sans, sans-serif">Noto Sans</option>
-                    <option value="Roboto, sans-serif">Roboto</option>
-                    <option value="Open Sans, sans-serif">Open Sans</option>
-                    <option value="Lato, sans-serif">Lato</option>
-                    <option value="Poppins, sans-serif">Poppins</option>
-                    <option value="Montserrat, sans-serif">Montserrat</option>
-                    <option value="Oswald, sans-serif">Oswald</option>
-                    <option value="Raleway, sans-serif">Raleway</option>
-                    <option value="Nunito, sans-serif">Nunito</option>
-                    <option value="Mukta, sans-serif">Mukta</option>
-                    <option value="Quicksand, sans-serif">Quicksand</option>
-                    <option value="Ubuntu, sans-serif">Ubuntu</option>
-                    <option value="Cabin, sans-serif">Cabin</option>
-                    <option value="Exo 2, sans-serif">Exo 2</option>
+                  <div >
+                   <div className="id1 flex flex-norwrap justify-end border-1 border-gray-200 rounded-lg pt-2 pb-2 pl-1 pr-1" style={myStyle} >
+                    <label text="choose file"
+                      title="choose file" className="inline-flex items-center px-2.5 py-2.5 me-2  text-sm text-center focus:ring-4 focus:ring-stone-200 dark:focus:ring-stone-900 bg-stone-700 hover:bg-stone-950 text-white font-bold rounded">
+                      <Upload className="w-5 h-5" />
+                      <input
+                        type="file"
+                        accept=".txt"
+                        onChange={handleFileChange}
+                        className="hidden"
+                      />
+                    </label>
+                    <button
+                      onClick={handleDownload}
+                      className="inline-flex items-center px-2.5 py-2.5 me-2 text-sm text-center focus:ring-4 focus:ring-stone-200 dark:focus:ring-stone-900 bg-stone-700 hover:bg-stone-950 text-white font-bold rounded"
+                    >
+                      <Download className="w-5 h-5" />
+                    </button>
+                    <select
+                      onChange={handleFontChange}
+                      className="p-2 border rounded-xl shadow-md"
+                      style={{ backgroundColor: myStyle.backgroundColor, color: myStyle.color }}
+                      value={font}>
+                      {/* Sans-serif Fonts */}
+                      <option value="Arial, sans-serif">Arial</option>
+                      <option value="Verdana, sans-serif">Verdana</option>
+                      <option value="Helvetica, sans-serif">Helvetica</option>
+                      <option value="Tahoma, sans-serif">Tahoma</option>
+                      <option value="Trebuchet MS, sans-serif">Trebuchet MS</option>
+                      <option value="Gill Sans, sans-serif">Gill Sans</option>
+                      <option value="Noto Sans, sans-serif">Noto Sans</option>
+                      <option value="Roboto, sans-serif">Roboto</option>
+                      <option value="Open Sans, sans-serif">Open Sans</option>
+                      <option value="Lato, sans-serif">Lato</option>
+                      <option value="Poppins, sans-serif">Poppins</option>
+                      <option value="Montserrat, sans-serif">Montserrat</option>
+                      <option value="Oswald, sans-serif">Oswald</option>
+                      <option value="Raleway, sans-serif">Raleway</option>
+                      <option value="Nunito, sans-serif">Nunito</option>
+                      <option value="Mukta, sans-serif">Mukta</option>
+                      <option value="Quicksand, sans-serif">Quicksand</option>
+                      <option value="Ubuntu, sans-serif">Ubuntu</option>
+                      <option value="Cabin, sans-serif">Cabin</option>
+                      <option value="Exo 2, sans-serif">Exo 2</option>
 
-                    {/* Serif Fonts */}
-                    <option value="Georgia, serif">Georgia</option>
-                    <option value="Times New Roman, serif">Times New Roman</option>
-                    <option value="Palatino Linotype, serif">Palatino Linotype</option>
-                    <option value="Book Antiqua, serif">Book Antiqua</option>
-                    <option value="Garamond, serif">Garamond</option>
-                    <option value="Baskerville, serif">Baskerville</option>
-                    <option value="PT Serif, serif">PT Serif</option>
-                    <option value="Merriweather, serif">Merriweather</option>
-                    <option value="Playfair Display, serif">Playfair Display</option>
-                    <option value="Libre Baskerville, serif">Libre Baskerville</option>
+                      {/* Serif Fonts */}
+                      <option value="Georgia, serif">Georgia</option>
+                      <option value="Times New Roman, serif">Times New Roman</option>
+                      <option value="Palatino Linotype, serif">Palatino Linotype</option>
+                      <option value="Book Antiqua, serif">Book Antiqua</option>
+                      <option value="Garamond, serif">Garamond</option>
+                      <option value="Baskerville, serif">Baskerville</option>
+                      <option value="PT Serif, serif">PT Serif</option>
+                      <option value="Merriweather, serif">Merriweather</option>
+                      <option value="Playfair Display, serif">Playfair Display</option>
+                      <option value="Libre Baskerville, serif">Libre Baskerville</option>
 
-                    {/* Monospace Fonts */}
-                    <option value="Courier New, monospace">Courier New</option>
-                    <option value="Lucida Console, monospace">Lucida Console</option>
-                    <option value="Consolas, monospace">Consolas</option>
-                    <option value="Source Code Pro, monospace">Source Code Pro</option>
-                    <option value="Fira Code, monospace">Fira Code</option>
-                    <option value="Roboto Mono, monospace">Roboto Mono</option>
-                    <option value="Ubuntu Mono, monospace">Ubuntu Mono</option>
-                    <option value="JetBrains Mono, monospace">JetBrains Mono</option>
-                    <option value="Inconsolata, monospace">Inconsolata</option>
-                    <option value="Overpass Mono, monospace">Overpass Mono</option>
+                      {/* Monospace Fonts */}
+                      <option value="Courier New, monospace">Courier New</option>
+                      <option value="Lucida Console, monospace">Lucida Console</option>
+                      <option value="Consolas, monospace">Consolas</option>
+                      <option value="Source Code Pro, monospace">Source Code Pro</option>
+                      <option value="Fira Code, monospace">Fira Code</option>
+                      <option value="Roboto Mono, monospace">Roboto Mono</option>
+                      <option value="Ubuntu Mono, monospace">Ubuntu Mono</option>
+                      <option value="JetBrains Mono, monospace">JetBrains Mono</option>
+                      <option value="Inconsolata, monospace">Inconsolata</option>
+                      <option value="Overpass Mono, monospace">Overpass Mono</option>
 
-                    {/* Cursive Fonts */}
-                    <option value="Dancing Script, cursive">Dancing Script</option>
-                    <option value="Pacifico, cursive">Pacifico</option>
-                    <option value="Great Vibes, cursive">Great Vibes</option>
-                    <option value="Satisfy, cursive">Satisfy</option>
-                    <option value="Caveat, cursive">Caveat</option>
-                    <option value="Shadows Into Light, cursive">Shadows Into Light</option>
-                    <option value="Amatic SC, cursive">Amatic SC</option>
-                    <option value="Courgette, cursive">Courgette</option>
-                    <option value="Sacramento, cursive">Sacramento</option>
-                    <option value="Handlee, cursive">Handlee</option>
-                  </select>
+                      {/* Cursive Fonts */}
+                      <option value="Dancing Script, cursive">Dancing Script</option>
+                      <option value="Pacifico, cursive">Pacifico</option>
+                      <option value="Great Vibes, cursive">Great Vibes</option>
+                      <option value="Satisfy, cursive">Satisfy</option>
+                      <option value="Caveat, cursive">Caveat</option>
+                      <option value="Shadows Into Light, cursive">Shadows Into Light</option>
+                      <option value="Amatic SC, cursive">Amatic SC</option>
+                      <option value="Courgette, cursive">Courgette</option>
+                      <option value="Sacramento, cursive">Sacramento</option>
+                      <option value="Handlee, cursive">Handlee</option>
+                    </select>
+                  </div>
+                  </div>
+                  
                 </div>
               </div>
               <div className="px-4 py-2 rounded-b-lg dark:bg-gray-800" style={myStyle}>
